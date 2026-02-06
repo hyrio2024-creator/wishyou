@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Birthday Wish</title>
+
+<style>
+body {
+     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Circular image */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ff6f91;
+    margin-bottom: 15px;
+}
+
+/* Text */
+h1 {
+    color: #ff4d6d;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Visible button */
+button {
+    background: linear-gradient(to right, #ff6f91, #ff4d6d);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <img src="bunny2.png" alt="Birthday Person" class="profile-img">
+
+    <h1>Happy Birthday!</h1>
+    <p>I have something special for you today . Click below to see your birthday surprise..</p>
+
+   <button id="yesBtn" onclick="sayYes()" href="">open surprise</button>
+</div>
+
+
+</body>
+<script>
+   function sayYes() {
+    window.location.href = "bunnyspage2.html";
+}   
+</script>
+</html>
